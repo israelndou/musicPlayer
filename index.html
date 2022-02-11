@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="dist/scss/style.css">
+    <title>My Music Player</title>
+
+</head>
+
+<body>
+    <div id="music" class="music-container">
+        <div>
+            <h1 class="play-status">Paused</h1>
+        </div>
+
+        <div class="cover-container">
+            <img src="" alt="song-cover" id=cover></>
+        </div>
+
+        <div class="song-info my-1">
+            <h2 id="song-title"></h2>
+        </div>
+
+        <div class="media-navigation">
+            <button id="prev" class="action-btn"><i class="fas fa-step-backward"></i></button>
+            <button id="play" class="action-btn action-btn-big"><i class="fas fa-play-circle"></i></button>
+            <button id="next" class="action-btn"><i class="fas fa-step-forward"></i></button>
+        </div>
+        <div class="progress-container">
+            <div class="progress-bar"></div>
+        </div>
+        <div class="time-status">
+            <span class="start-time">1:21</span>
+            <span class="duration-time">3:46</span>
+        </div>
+        <audio src="" id="audio"></audio>
+
+        
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+            integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="dist/js/player.js"></script>
+</body>
+
+</html>

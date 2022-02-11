@@ -1,0 +1,154 @@
+@import "utilities";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $primary-color;
+    font-family: $font-stack;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.music-container {
+    background-color: $light-color;
+    border-radius: 20px;
+    height: 460px;
+    width: 500px;
+    margin: 8rem auto;
+    text-align: center;
+    box-shadow: 4px 4px 15px -1px #1c1c1c85;
+
+    h1 {
+        color: $grey-color;
+        font-size: 1rem;
+        font-weight: bolder;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    h2,
+    h3,
+    h4 {
+        font-size: 1.1rem;
+        font-weight: 800;
+    }
+
+    h3 {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    h4 {
+        font-size: .8rem;
+        font-weight: 600;
+    }
+
+    img {
+        width: 30%;
+        margin: 0 auto;
+        border-radius: 50%;
+        animation: rotate 4s linear infinite;
+        animation-play-state: paused;
+        box-shadow: 2px 2px 15px -4px #1c1c1c85;
+    }
+
+    &.play img {
+        animation-play-state: running;
+    }
+
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+
+    }
+
+    &.play h2 {
+        color: $primary-color;
+    }
+
+    .media-navigation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .action-btn {
+        background-color: transparent;
+        border: 0;
+        font-size: 25px;
+        cursor: pointer;
+        padding: 10px;
+        outline: none;
+
+        &:hover {
+            transform: scale(.94);
+        }
+
+        &-end {
+            font-size: 20px;
+            margin: 0 40px;
+        }
+
+        &-big {
+            color: $primary-color;
+            font-size: 50px;
+            margin: 0 20px;
+        }
+
+    }
+
+    .progress-container {
+        background-color: $grey-color;
+        border-radius: 5px;
+        cursor: pointer;
+        height: 4px;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .progress-bar {
+        background-color: $primary-color;
+        border-radius: 5px;
+        height: 100%;
+        width: 0%;
+        transition: width 0.1s linear;
+
+    }
+
+    .time-status {
+        font-size: .7rem;
+        font-weight: 600;
+        display: flex;
+        justify-content: space-between;
+        color: $primary-color;
+    }
+
+    .start-time {
+        margin-left: 100px;
+        margin-top: 4px;
+    }
+
+    .duration-time {
+        margin-right: 100px;
+        margin-top: 4px;
+    }
+
+    .action-chevron-down {
+        color: $primary-color;
+        font-size: 1.4rem;
+    }
+
+}
+

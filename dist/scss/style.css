@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800;900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0266ff;
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.music-container {
+  background-color: #f4f4f4;
+  border-radius: 20px;
+  height: 460px;
+  width: 500px;
+  margin: 8rem auto;
+  text-align: center;
+  -webkit-box-shadow: 4px 4px 15px -1px #1c1c1c85;
+          box-shadow: 4px 4px 15px -1px #1c1c1c85;
+}
+
+.music-container h1 {
+  color: #9c9c9c;
+  font-size: 1rem;
+  font-weight: bolder;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.music-container h2,
+.music-container h3,
+.music-container h4 {
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.music-container h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.music-container h4 {
+  font-size: .8rem;
+  font-weight: 600;
+}
+
+.music-container img {
+  width: 30%;
+  margin: 0 auto;
+  border-radius: 50%;
+  -webkit-animation: rotate 4s linear infinite;
+          animation: rotate 4s linear infinite;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  -webkit-box-shadow: 2px 2px 15px -4px #1c1c1c85;
+          box-shadow: 2px 2px 15px -4px #1c1c1c85;
+}
+
+.music-container.play img {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.music-container.play h2 {
+  color: #0266ff;
+}
+
+.music-container .media-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.music-container .action-btn {
+  background-color: transparent;
+  border: 0;
+  font-size: 25px;
+  cursor: pointer;
+  padding: 10px;
+  outline: none;
+}
+
+.music-container .action-btn:hover {
+  -webkit-transform: scale(0.94);
+          transform: scale(0.94);
+}
+
+.music-container .action-btn-end {
+  font-size: 20px;
+  margin: 0 40px;
+}
+
+.music-container .action-btn-big {
+  color: #0266ff;
+  font-size: 50px;
+  margin: 0 20px;
+}
+
+.music-container .progress-container {
+  background-color: #9c9c9c;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 4px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.music-container .progress-bar {
+  background-color: #0266ff;
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  -webkit-transition: width 0.1s linear;
+  transition: width 0.1s linear;
+}
+
+.music-container .time-status {
+  font-size: .7rem;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #0266ff;
+}
+
+.music-container .start-time {
+  margin-left: 100px;
+  margin-top: 4px;
+}
+
+.music-container .duration-time {
+  margin-right: 100px;
+  margin-top: 4px;
+}
+
+.music-container .action-chevron-down {
+  color: #0266ff;
+  font-size: 1.4rem;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.m-3 {
+  margin: 3rem;
+}
+
+.my-3 {
+  margin: 3rem 0;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.m-4 {
+  margin: 4rem;
+}
+
+.my-4 {
+  margin: 4rem 0;
+}
+
+.p-4 {
+  padding: 4rem;
+}
+
+.py-4 {
+  padding: 4rem 0;
+}
+
+.m-5 {
+  margin: 5rem;
+}
+
+.my-5 {
+  margin: 5rem 0;
+}
+
+.p-5 {
+  padding: 5rem;
+}
+
+.py-5 {
+  padding: 5rem 0;
+}
+/*# sourceMappingURL=style.css.map */

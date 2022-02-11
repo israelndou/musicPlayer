@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800;900&display=swap');
+
+$font-stack: 'Inter', sans-serif;
+$grey-color: #9c9c9c;
+$white-color: #fff;
+$light-color: #f4f4f4;
+$primary-color: #0266ff;
+$secondary-color: #222222;
+
+// Margin & padding classes
+$spaceAmounts: (1,2,3,4,5);
+
+@each $space in $spaceAmounts {
+    .m-#{$space} {
+        margin: #{$space}rem;
+    }
+
+    .my-#{$space} {
+        margin: #{$space}rem 0;
+    }
+
+    .p-#{$space} {
+        padding: #{$space}rem;
+    }
+
+    .py-#{$space} {
+        padding: #{$space}rem 0;
+    }
+}
